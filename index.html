@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Flappy Sky</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="score-display">0</div>
+
+    <div id="ui-layer">
+        <div id="start-screen" class="message-box">
+            <h1>FLAPPY SKY</h1>
+            <p>Tap, Click, Space, or W to Fly</p>
+            <button id="start-btn">PLAY</button>
+        </div>
+
+        <div id="game-over-screen" class="message-box hidden">
+            <h1>GAME OVER</h1>
+            <p>Score: <span id="final-score">0</span></p>
+            <p>Best: <span id="best-score">0</span></p>
+            <button id="restart-btn">TRY AGAIN</button>
+        </div>
+    </div>
+
+    <canvas id="gameCanvas"></canvas>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #4facfe; /* Default Day Gradient start */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    touch-action: none; /* Prevent default touch actions like scrolling */
+    transition: background-color 1s ease;
+}
+
+canvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+#ui-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Let clicks pass through to canvas/body */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.message-box {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    pointer-events: auto; /* Re-enable clicks for buttons */
+    max-width: 80%;
+    animation: popIn 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+h1 {
+    color: #e67e22; /* Carrot orange */
+    margin: 0 0 0.5rem 0;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 0px #fff;
+    -webkit-text-stroke: 1px #333;
+}
+
+p {
+    color: #555;
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+
+button {
+    background: #e67e22;
+    color: white;
+    border: none;
+    padding: 12px 32px;
+    font-size: 1.2rem;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 4px 0 #d35400;
+    transition: transform 0.1s;
+    outline: none;
+}
+
+button:active {
+    transform: translateY(4px);
+    box-shadow: 0 0 0 #d35400;
+}
+
+#score-display {
+    position: absolute;
+    top: 10%;
+    width: 100%;
+    text-align: center;
+    font-size: 4rem;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 0 #000;
+    z-index: 10;
+    pointer-events: none;
+    display: none; /* Hidden on menu */
+}
+
+.hidden {
+    display: none !important;
+}
+
+@keyframes popIn {
+    from { transform: scale(0.8); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+/* Mobile adjustments */
+@media (max-width: 600px) {
+    h1 { font-size: 2rem; }
+    .message-box { padding: 1.5rem; width: 85%; }
+}
