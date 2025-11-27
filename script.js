@@ -698,7 +698,8 @@ function flap(e) {
     if (e.type !== 'keydown') {
         // e.preventDefault(); 
     }
-    if (e.target.tagName === 'BUTTON') return;
+    // Prevent game interaction if clicking buttons or links
+    if (e.target.tagName === 'BUTTON' || e.target.tagName === 'A' || e.target.closest('a')) return;
 
     if (gameState === 'START') {
         startGame();
