@@ -11,16 +11,22 @@
   "categories": ["games", "arcade"],
   "screenshots": [
     {
-      "src": "icon-512.png",
-      "sizes": "512x512",
+      "src": "screenshot1.png",
+      "sizes": "1280x720",
       "type": "image/png",
       "form_factor": "wide"
     },
     {
-      "src": "icon-512.png",
-      "sizes": "512x512",
+      "src": "screenshot2.png",
+      "sizes": "1280x720",
       "type": "image/png",
-      "form_factor": "narrow"
+      "form_factor": "wide"
+    },
+    {
+      "src": "screenshot3.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide"
     }
   ],
   "icons": [
