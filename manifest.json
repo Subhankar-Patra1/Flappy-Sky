@@ -6,6 +6,23 @@
   "background_color": "#4facfe",
   "theme_color": "#4facfe",
   "description": "Fly through the sky, dodge pipes, and experience dynamic weather transitions in this addictive arcade game.",
+  "orientation": "portrait",
+  "id": "/",
+  "categories": ["games", "arcade"],
+  "screenshots": [
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "form_factor": "wide"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "form_factor": "narrow"
+    }
+  ],
   "icons": [
     {
       "src": "icon-192.png",
